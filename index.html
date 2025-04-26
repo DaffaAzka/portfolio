@@ -12,7 +12,7 @@
     <style>
         html, body {
             height: 100%;
-            overflow: hidden;
+            overflow-x: hidden;
         }
         #particles-js {
             position: absolute;
@@ -61,30 +61,24 @@
             border-radius: 3px;
         }
         
-        @media (max-width: 640px) {
-            .scrollable-card {
-                max-height: 80vh;
-            }
-            .content-container {
-                overflow-y: auto;
-                max-height: calc(80vh - 120px); /* Subtract header height */
-            }
+    @media (max-width: 640px) {
+        .scrollable-card {
+           max-height: 70vh;
+            overflow-y: auto;
         }
-        .scroll-fade {
-            position: relative;
+        .content-container {
+            overflow-y: visible;
+            max-height: none;
         }
-        .scroll-fade::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 40px;
-            pointer-events: none;
-        }
-        .dark .scroll-fade::after {
-            background: linear-gradient(to top, rgba(23, 23, 23, 0.8), transparent);
-        }
+    }
+    
+    .scroll-fade::after {
+        background: linear-gradient(to bottom, transparent 0%, white 90%);
+        z-index: 1;
+    }
+    .dark .scroll-fade::after {
+        background: linear-gradient(to bottom, transparent 0%, #1a1a1a 90%);
+    }
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-black flex items-center justify-center min-h-screen px-4 transition-colors duration-300">
@@ -102,7 +96,7 @@
             </div>
         </div>
         
-        <div class="content-container px-4 py-2 sm:py-4 scroll-fade">
+        <div class="content-container px-4 py-4 sm:py-4 scroll-fade">
             <div class="space-y-6">
                 <div class="space-y-2" data-aos="fade-up" data-aos-delay="100">
                     <div class="space-x-1 space-y-2">
@@ -136,12 +130,12 @@
                         <div class="rounded-lg border border-gray-200 dark:border-neutral-700 p-4 hover:shadow-md transition-all">
                             <h3 class="font-medium text-gray-800 dark:text-gray-200">Smartclass</h3>
                             <p class="text-xs text-gray-400 mt-1">Built with Laravel & Livewire</p>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">A feature-rich online store with real-time inventory management</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">A project management product for distributor IFDP on West Jakarta</p>
                         </div>
                         <div class="rounded-lg border border-gray-200 dark:border-neutral-700 p-4 hover:shadow-md transition-all">
-                            <h3 class="font-medium text-gray-800 dark:text-gray-200">Health Tracking App</h3>
-                            <p class="text-xs text-gray-400 mt-1">Built with Flutter & Firebase</p>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Mobile application for tracking fitness goals and health metrics</p>
+                            <h3 class="font-medium text-gray-800 dark:text-gray-200">ProSync</h3>
+                            <p class="text-xs text-gray-400 mt-1">Built with Laravel</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">A project management app that I built during my Industrial Class</p>
                         </div>
                     </div>
                 </div>
@@ -149,40 +143,43 @@
                 <div class="space-y-3" data-aos="fade-up" data-aos-delay="400">
                     <h2 class="text-xl font-medium dark:text-white">Let's be friends</h2>
                     <div class="flex flex-wrap gap-4 mt-2">
-                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700">
+                        <a href="https://github.com/DaffaAzka" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700">
                             <i class="ri-github-fill text-lg"></i> Github
                         </a>
-                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-gradient-to-r from-amber-500 to-pink-500 text-white hover:opacity-90">
+                        <a href="https://www.instagram.com/dest.code" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-gradient-to-r from-amber-500 to-pink-500 text-white hover:opacity-90">
                             <i class="ri-instagram-line text-lg"></i> Instagram
                         </a>
-                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700">
+                        <a href="https://www.linkedin.com/in/daffa-islami-azka" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700">
                             <i class="ri-linkedin-fill text-lg"></i> LinkedIn
                         </a>
-                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-indigo-600 text-white hover:bg-indigo-700">
+                        <!-- <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-indigo-600 text-white hover:bg-indigo-700">
                             <i class="ri-discord-fill text-lg"></i> Discord
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 
             </div>
         </div>
         
-        <!-- Footer -->
-        <div class="mt-auto p-4 bg-gray-50 dark:bg-neutral-800 rounded-b-xl border-t border-gray-100 dark:border-neutral-800" data-aos="fade-up" data-aos-delay="500">
+        <div class="mt-auto p-4 bg-gray-50 dark:bg-neutral-800 rounded-b-xl border-t border-gray-100 dark:border-neutral-800 hidden sm:block" data-aos="fade-up" data-aos-delay="500">
             <div class="text-center text-sm text-gray-500 dark:text-gray-400">
                 Made with <i class="ri-heart-fill text-red-500 animate-pulse"></i> by Daffa Azka © 2025
             </div>
         </div>
     </div>
 
-    <!-- Initialize libraries -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize AOS
             AOS.init({
                 duration: 800,
                 easing: 'ease-in-out',
-                once: true
+                once: false, 
+                mirror: true, 
+                offset: 50 
+            });
+
+            document.querySelector('.scrollable-card').addEventListener('scroll', function() {
+                AOS.refresh();
             });
 
             new Typed('#typed-name', {
@@ -310,19 +307,6 @@
                         this.classList.remove('animate-pulse');
                     }, 1000);
                 });
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const contentContainer = document.querySelector('.content-container');
-            if (contentContainer && window.innerWidth < 640) {
-                // Just to highlight scrollability on mobile
-                setTimeout(() => {
-                    contentContainer.scrollTop = 20;
-                    setTimeout(() => {
-                        contentContainer.scrollTop = 0;
-                    }, 700);
-                }, 1500);
             }
         });
     </script>
