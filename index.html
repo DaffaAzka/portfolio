@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destcode</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .tag-badge {
+            transition: all 0.3s ease;
+        }
+        .tag-badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        .profile-image {
+            transition: all 0.5s ease;
+            border: 3px solid transparent;
+        }
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: #8B5CF6;
+            box-shadow: 0 0 25px rgba(139, 92, 246, 0.5);
+        }
+        .scrollable-card {
+            max-height: 90vh;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+        }
+        .scrollable-card::-webkit-scrollbar {
+            width: 6px;
+        }
+        .scrollable-card::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .scrollable-card::-webkit-scrollbar-thumb {
+            background-color: rgba(139, 92, 246, 0.5);
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 640px) {
+            .scrollable-card {
+                max-height: 80vh;
+            }
+            .content-container {
+                overflow-y: auto;
+                max-height: calc(80vh - 120px); /* Subtract header height */
+            }
+        }
+        .scroll-fade {
+            position: relative;
+        }
+        .scroll-fade::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            pointer-events: none;
+        }
+        .dark .scroll-fade::after {
+            background: linear-gradient(to top, rgba(23, 23, 23, 0.8), transparent);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-black flex items-center justify-center min-h-screen px-4 transition-colors duration-300">
+    <div id="particles-js"></div>
+
+    <div data-aos="fade-up" class="flex flex-col bg-white border border-gray-200 shadow-lg rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 max-w-4xl backdrop-blur-sm bg-opacity-90 dark:bg-opacity-80 scrollable-card">
+        
+        <div class="sticky top-0 grid grid-cols-1 sm:grid-cols-4 px-4 py-2 bg-white dark:bg-neutral-900 z-10 border-b border-gray-100 dark:border-neutral-800">
+            <div class="py-2 sm:py-4 col-span-3">
+                <h1 class="text-xl font-medium dark:text-white">Hello, I'm <span id="typed-name" class="font-semibold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"></span></h1>
+                <p class="text-sm text-gray-400 italic">Programmer yang lebih suka nescafe sachet daripada kopi indomaret</p>
+            </div>
+            <div class="flex justify-center sm:justify-end order-first sm:order-last py-2">
+                <img src="img/profile.jpeg" alt="Daffa Azka" class="profile-image rounded-full h-16 w-16 sm:h-20 sm:w-20 object-cover cursor-pointer">
+            </div>
+        </div>
+        
+        <div class="content-container px-4 py-2 sm:py-4 scroll-fade">
+            <div class="space-y-6">
+                <div class="space-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="space-x-1 space-y-2">
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-purple-500 text-purple-500 dark:text-purple-400"><i class="ri-code-s-slash-line mr-1"></i>Web</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-blue-500 text-blue-500 dark:text-blue-400"><i class="ri-android-line mr-1"></i>Android</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-500 text-gray-500 dark:text-neutral-400"><i class="ri-computer-line mr-1"></i>Desktop</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-amber-500 text-amber-500 dark:text-amber-400"><i class="ri-award-line mr-1"></i>1st LKS ITSS Tangerang 2025</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-3" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="text-xl font-medium dark:text-white">About Me</h2>
+                    <p class="text-sm text-gray-400">I'm a tech enthusiast from Tangerang, Indonesia, who loves building software solutions that make a difference. When I'm not coding, you'll find me sipping coffee at odd hours of the night, diving into new tech stacks, or refactoring old projects.</p>
+                </div>
+
+                <div class="space-y-3" data-aos="fade-up" data-aos-delay="300">
+                    <h2 class="text-xl font-medium dark:text-white">Stacks</h2>
+                    <div class="space-x-1 space-y-2">
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-amber-500 text-amber-500 dark:text-amber-400"><i class="ri-layout-grid-line mr-1"></i>Tailwindcss</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-purple-500 text-purple-500 dark:text-purple-400"><i class="ri-remixicon-line mr-1"></i>Laravel</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-500 text-gray-500 dark:text-neutral-400"><i class="ri-flashlight-line mr-1"></i>Livewire</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-blue-500 text-blue-500 dark:text-blue-400"><i class="ri-reactjs-line mr-1"></i>ReactJs</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-purple-500 text-purple-500 dark:text-purple-400"><i class="ri-flutter-line mr-1"></i>Flutter</span>
+                        <span class="tag-badge inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-500 text-gray-500 dark:text-neutral-400"><i class="ri-code-box-line mr-1"></i>Java</span>
+                    </div>
+                </div>
+
+                <div class="space-y-3" data-aos="fade-up" data-aos-delay="350">
+                    <h2 class="text-xl font-medium dark:text-white">Recent Projects</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="rounded-lg border border-gray-200 dark:border-neutral-700 p-4 hover:shadow-md transition-all">
+                            <h3 class="font-medium text-gray-800 dark:text-gray-200">Smartclass</h3>
+                            <p class="text-xs text-gray-400 mt-1">Built with Laravel & Livewire</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">A feature-rich online store with real-time inventory management</p>
+                        </div>
+                        <div class="rounded-lg border border-gray-200 dark:border-neutral-700 p-4 hover:shadow-md transition-all">
+                            <h3 class="font-medium text-gray-800 dark:text-gray-200">Health Tracking App</h3>
+                            <p class="text-xs text-gray-400 mt-1">Built with Flutter & Firebase</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Mobile application for tracking fitness goals and health metrics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3" data-aos="fade-up" data-aos-delay="400">
+                    <h2 class="text-xl font-medium dark:text-white">Let's be friends</h2>
+                    <div class="flex flex-wrap gap-4 mt-2">
+                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700">
+                            <i class="ri-github-fill text-lg"></i> Github
+                        </a>
+                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-gradient-to-r from-amber-500 to-pink-500 text-white hover:opacity-90">
+                            <i class="ri-instagram-line text-lg"></i> Instagram
+                        </a>
+                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700">
+                            <i class="ri-linkedin-fill text-lg"></i> LinkedIn
+                        </a>
+                        <a href="#" class="social-icon inline-flex items-center gap-x-1.5 py-2 px-4 rounded-full text-sm font-medium bg-indigo-600 text-white hover:bg-indigo-700">
+                            <i class="ri-discord-fill text-lg"></i> Discord
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="mt-auto p-4 bg-gray-50 dark:bg-neutral-800 rounded-b-xl border-t border-gray-100 dark:border-neutral-800" data-aos="fade-up" data-aos-delay="500">
+            <div class="text-center text-sm text-gray-500 dark:text-gray-400">
+                Made with <i class="ri-heart-fill text-red-500 animate-pulse"></i> by Daffa Azka © 2025
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialize libraries -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            new Typed('#typed-name', {
+                strings: ['Daffa Azka', 'a Web Developer', 'Azka', 'an Android Developer', 'a Problem Solver', 'Dest'],
+                typeSpeed: 70,
+                backSpeed: 50,
+                backDelay: 1500,
+                startDelay: 500,
+                loop: true
+            });
+
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 20,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#8B5CF6"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#8B5CF6",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileImage = document.querySelector('.profile-image');
+            if (profileImage) {
+                profileImage.addEventListener('click', function() {
+                    this.classList.add('animate-pulse');
+                    setTimeout(() => {
+                        this.classList.remove('animate-pulse');
+                    }, 1000);
+                });
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentContainer = document.querySelector('.content-container');
+            if (contentContainer && window.innerWidth < 640) {
+                // Just to highlight scrollability on mobile
+                setTimeout(() => {
+                    contentContainer.scrollTop = 20;
+                    setTimeout(() => {
+                        contentContainer.scrollTop = 0;
+                    }, 700);
+                }, 1500);
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
