@@ -4,9 +4,17 @@ import DotPattern from "@/components/ui/dot-pattern";
 import Particles from "@/components/ui/particles";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const BackgroundPattern = () => {
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Prevent hydration mismatch by only rendering after mount
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const isLightTheme = resolvedTheme === "light";
 
   return (
@@ -22,13 +30,15 @@ export const BackgroundPattern = () => {
           "dark:fill-slate-700"
         )}
       />
-      <Particles
-        className="absolute inset-0"
-        quantity={100}
-        ease={80}
-        color={isLightTheme ? "#000" : "#fff"}
-        refresh
-      />
+      {mounted && (
+        <Particles
+          className="absolute inset-0"
+          quantity={100}
+          ease={80}
+          color={isLightTheme ? "#000" : "#fff"}
+          refresh
+        />
+      )}
     </>
   );
 };
