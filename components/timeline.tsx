@@ -6,7 +6,10 @@ export default function Timeline() {
   const experiences = getAllExperiences();
   return (
     <div className="max-w-(--breakpoint-sm) mx-auto py-12 md:py-16 px-6">
-      <div className="relative ml-3">
+      <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
+        My Experiences
+      </h2>
+      <div className="relative ml-3 mt-8 md:mt-16">
         {/* Timeline line */}
         <div className="absolute left-0 top-4 bottom-0 border-l-2" />
 

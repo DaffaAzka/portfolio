@@ -26,7 +26,7 @@ export default function Hero() {
                 className="rounded-full py-1 border-border"
                 asChild>
                 <Link href="https://www.linkedin.com/in/daffa-azka/">
-                  DAFFA ISLAMI AZKA <ArrowUpRight className="ml-1 size-4" />
+                  DAFFA ISLAMI AZKA
                 </Link>
               </Badge>
               <h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-[-0.035em]">

@@ -7,12 +7,21 @@ export interface Menu {
   link: string;
 }
 
-export interface Menu {
+export interface Experience {
   company: string;
   description: string;
   period: string;
   technologies: string[];
   title: string;
+}
+
+export interface Project {
+  category: string;
+  title: string;
+  details: string;
+  stack: string[];
+  projectUrl: string;
+  image: string;
 }
 
 export function getAllMenus(): Menu[] {
@@ -21,8 +30,14 @@ export function getAllMenus(): Menu[] {
   return JSON.parse(fileContents);
 }
 
-export function getAllExperiences(): Menu[] {
+export function getAllExperiences(): Experience[] {
   const filePath = path.join(process.cwd(), "db", "experiences.json");
+  const fileContents = fs.readFileSync(filePath, "utf8");
+  return JSON.parse(fileContents);
+}
+
+export function getAllProjects(): Project[] {
+  const filePath = path.join(process.cwd(), "db", "projects.json");
   const fileContents = fs.readFileSync(filePath, "utf8");
   return JSON.parse(fileContents);
 }
