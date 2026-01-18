@@ -18,7 +18,7 @@ export default function Hero() {
     <div className="min-h-screen flex items-center justify-center px-6">
       <BackgroundPattern />
       <div className="min-h-screen flex items-center justify-center ">
-        <div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12 bg-background z-50 rounded-2xl dark:bg-slate-900">
+        <div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12 bg-background z-0 rounded-2xl dark:bg-slate-900">
           <div className="flex items-center content-center">
             <div>
               <Badge

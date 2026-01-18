@@ -8,7 +8,7 @@ import { Menu } from "@/lib/data";
 
 function Navbar({ menus }: { menus: Menu[] }) {
   return (
-    <nav className="fixed top-6 inset-x-4 h-16 bg-background border max-w-(--breakpoint-xl) mx-auto rounded-full z-80">
+    <nav className="fixed top-6 inset-x-4 h-16 bg-background border max-w-(--breakpoint-xl) mx-auto rounded-full z-10">
       <div className="h-full flex items-center justify-between mx-auto px-4">
         <div className=""></div>
         {/* Desktop Menu */}

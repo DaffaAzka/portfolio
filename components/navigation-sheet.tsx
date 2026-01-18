@@ -24,7 +24,6 @@ export function NavigationSheet({ menus }: { menus: MenuType[] }) {
         </Button>
       </SheetTrigger>
       <SheetContent className="px-6 py-3">
-        <Logo />
         <NavMenu
           menus={menus}
           orientation="vertical"
