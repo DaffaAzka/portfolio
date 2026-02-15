@@ -2,7 +2,7 @@ import { Instagram, Linkedin, MailIcon, MapPinIcon, MessageCircle, MessageCircle
 import Link from "next/link";
 
 const Contact = () => (
-  <div className="flex min-h-screen items-center justify-center pt-12 pb-16 md:pt-16">
+  <div className="flex items-center justify-center pt-12 pb-16 md:pt-16">
     <div className="mx-auto w-full max-w-(--breakpoint-xl) px-6 xl:px-0">
       <b className="font-semibold text-muted-foreground text-sm uppercase">
         Get In Touch

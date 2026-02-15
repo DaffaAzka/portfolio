@@ -1,0 +1,65 @@
+[
+  {
+    "category": "Operating Systems",
+    "icon": "Monitor",
+    "skills": ["Fedora Workstation 42", "Windows 11"]
+  },
+  {
+    "category": "Programming Languages",
+    "icon": "Code",
+    "skills": [
+      "TypeScript",
+      "JavaScript",
+      "C#",
+      "Java",
+      "Kotlin",
+      "PHP",
+      "Dart",
+      "Go"
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "icon": "Boxes",
+    "skills": [
+      "Next.js",
+      "React.js",
+      "Laravel",
+      "Elysia.js",
+      "Livewire",
+      "Flutter",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "category": "Libraries & Tools",
+    "icon": "Package",
+    "skills": [
+      "Express.js",
+      "PostgreSQL",
+      "MySQL",
+      "gRPC",
+      "MinIO",
+      "Flowbite",
+      "Preline",
+      "Bootstrap"
+    ]
+  },
+  {
+    "category": "Languages",
+    "icon": "Globe",
+    "skills": ["English", "Bahasa Indonesia"]
+  },
+  {
+    "category": "Other Skills",
+    "icon": "Zap",
+    "skills": [
+      "HTML",
+      "CSS",
+      "REST API",
+      "Database Design",
+      "System Design",
+      "Git & Version Control"
+    ]
+  }
+]

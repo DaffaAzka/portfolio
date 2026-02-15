@@ -8,7 +8,7 @@ function Projects() {
   const projects = getAllProjects();
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-(--breakpoint-lg) w-full py-10 px-6">
+      <div className="max-w-(--breakpoint-xl) w-full mx-auto py-10 px-6">
         <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
           My Projects
         </h2>

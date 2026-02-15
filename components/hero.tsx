@@ -25,7 +25,7 @@ export default function Hero() {
                 variant="indigo"
                 className="rounded-full py-1 border-border"
                 asChild>
-                <Link href="https://www.linkedin.com/in/daffa-azka/">
+                <Link href="https://www.linkedin.com/in/daffa-islami-azka/">
                   DAFFA ISLAMI AZKA
                 </Link>
               </Badge>

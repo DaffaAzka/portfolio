@@ -1,6 +1,6 @@
 [
   {
-    "title": "Apprenticeship",
+    "title": "Full Stack Developer - Apprenticeship",
     "company": "PT. Tri Nindya Utama",
     "period": "June 2025 - Present",
     "description": "Development and maintenance of Internal Audit Management System applications for clients such as MRT, Jamkrindo, and Waskita Karya.",
@@ -8,23 +8,23 @@
   },
   {
     "title": "National Competitor",
-    "company": "Lomba Kompetensi Indonesia",
+    "company": "Lomba Kompetensi Indonesia (LKI)",
     "period": "February - August 2025",
-    "description": "National Top 10 representing Banten Province in IT Software Solution for Business category, competing at the national level.",
-    "technologies": ["C#", "Java", "Kotlin", "System Design"]
+    "description": "Achieved National Top 10 representing Banten Province in IT Software Solution for Business category. Competed at the national level showcasing advanced system design and programming skills.",
+    "technologies": ["C#", "Java", "Kotlin", "System Design", "Problem Solving"]
   },
   {
     "title": "Freelance Full Stack Developer",
     "company": "Independent",
     "period": "February - May 2025",
-    "description": "Developed a website content management system for a smart TV manufacturer and created showcase websites for Green Royal Puri and Korean Town (Agung Sedayu Group).",
-    "technologies": ["Laravel", "Livewire", "CMS"]
+    "description": "Developed a comprehensive CMS for a smart TV manufacturer. Created modern showcase websites for Green Royal Puri and Korean Town projects under Agung Sedayu Group using latest web technologies.",
+    "technologies": ["Laravel", "Livewire", "Tailwind CSS", "CMS Development"]
   },
   {
-    "title": "Industrial Class Program",
+    "title": "Backend Developer - Industrial Class",
     "company": "Wellmagic Media Digital",
     "period": "October - December 2024",
-    "description": "Developed a REST API for an alumni record website as part of the industry class program, focusing on backend development and database management.",
-    "technologies": ["Laravel", "MySQL", "Database Design"]
+    "description": "Built REST API for an alumni record management system as part of the industry class program. Focused on robust backend development, database architecture, and system optimization.",
+    "technologies": ["Laravel", "MySQL", "REST API", "Database Design"]
   }
 ]

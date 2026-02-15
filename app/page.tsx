@@ -4,6 +4,7 @@ import Timeline from "@/components/timeline";
 import Image from "next/image";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Timeline />
       <Projects />
+      <Skills />
       <Contact />
     </div>
   );

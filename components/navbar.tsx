@@ -5,6 +5,7 @@ import { Search } from "lucide-react";
 import { NavigationSheet } from "./navigation-sheet";
 import { NavMenu } from "./nav-menu";
 import { Menu } from "@/lib/data";
+import { ThemeToggle } from "./theme-toggle";
 
 function Navbar({ menus }: { menus: Menu[] }) {
   return (
@@ -19,6 +20,7 @@ function Navbar({ menus }: { menus: Menu[] }) {
           <div className="md:hidden">
             <NavigationSheet menus={menus} />
           </div>
+          <ThemeToggle />
         </div>
       </div>
     </nav>

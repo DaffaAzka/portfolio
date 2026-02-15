@@ -1,58 +1,49 @@
 [
   {
-    "category": "Audit Management System Application",
-    "title": "SIGMA MRT",
-    "details": "Maintained and enhanced the internal audit application for MRT Jakarta using modern tech stack with Express TypeScript, React, gRPC microservices, and MinIO storage.",
-    "stack": ["Express TS", "ReactJs", "gRPC", "MinIO"],
+    "category": "Audit Management System",
+    "title": "MRT Jakarta - SIGMA Internal Audit",
+    "details": "Maintained and enhanced the internal audit application for MRT Jakarta. Implemented modern tech stack with Express TypeScript, React frontend, gRPC microservices, and MinIO cloud storage for efficient audit tracking.",
+    "stack": ["Express TS", "React", "gRPC", "MinIO", "TypeScript"],
     "projectUrl": "https://banggasolution.com/",
     "image": "sigma.png"
   },
   {
-    "category": "Audit Management System Application",
-    "title": "Waskita Karya Internal Audit",
-    "details": "Customized and adapted E-TILA application to meet specific client requirements for Waskita Karya's internal audit processes and compliance needs.",
-    "stack": ["Laravel", "PostgreSQL"],
-    "projectUrl": "https://banggasolution.com/",
-    "image": "waskita.png"
-  },
-
-  {
-    "category": "Audit Management System Application",
-    "title": "E-Audit",
-    "details": "Refactored and modernized Android audit application to the latest Flutter version, improving performance and user experience for mobile audit management.",
-    "stack": ["Flutter", "Dart", "REST API"],
+    "category": "Audit Management System",
+    "title": "E-Audit Mobile Application",
+    "details": "Refactored and modernized legacy Android audit application to the latest Flutter version. Improved performance, user experience, and maintained API compatibility with existing backend services.",
+    "stack": ["Flutter", "Dart", "REST API", "Mobile Development"],
     "projectUrl": "https://banggasolution.com/",
     "image": "eaudit.png"
   },
   {
-    "category": "Audit Management System Application",
-    "title": "E-TILA - Audit Management System",
-    "details": "Developed and enhanced audit application product for Bangga Solution, implementing enterprise-level features for internal audit management with Laravel and PostgreSQL.",
-    "stack": ["Laravel", "PostgreSQL"],
+    "category": "Audit Management System",
+    "title": "Waskita Karya - E-TILA",
+    "details": "Customized and adapted enterprise audit management system to meet Waskita Karya's specific requirements. Implemented role-based access control, compliance tracking, and advanced reporting features.",
+    "stack": ["Laravel", "PostgreSQL", "Enterprise Features"],
     "projectUrl": "https://banggasolution.com/",
-    "image": "etila.png"
+    "image": "waskita.png"
   },
   {
     "category": "Web Technology",
     "title": "SiSaku - Student Savings Management",
-    "details": "Created a dynamic role-based student savings management application with modern UI/UX using Laravel Livewire and Tailwind CSS for efficient financial tracking.",
-    "stack": ["Laravel", "Livewire", "Tailwind"],
+    "details": "Built a dynamic role-based student savings management application with modern UI/UX. Features include transaction tracking, fund management, and administrative dashboards using Laravel Livewire and Tailwind CSS.",
+    "stack": ["Laravel", "Livewire", "Tailwind CSS", "MySQL"],
     "projectUrl": "https://github.com/DaffaAzka/SiSaku",
     "image": "sisaku.png"
   },
   {
     "category": "Project Management",
     "title": "ProSync - Team Project Manager",
-    "details": "Built a comprehensive project and task management application for team collaboration, featuring modern UI with Laravel backend and Tailwind CSS styling.",
-    "stack": ["Laravel", "Tailwind"],
+    "details": "Created a comprehensive project and task management application designed for team collaboration. Features include task assignment, timeline tracking, progress monitoring, and team communication tools.",
+    "stack": ["Laravel", "Tailwind CSS", "MySQL", "Full Stack"],
     "projectUrl": "https://github.com/DaffaAzka/pro-sync",
     "image": "prosync.jpeg"
   },
   {
     "category": "Real Estate Marketing",
     "title": "Green Royal Puri - Property Landing Page",
-    "details": "Developed a high-performance, SEO-optimized property marketing landing page for Agung Sedayu Group's Green Royal Puri project with modern responsive design.",
-    "stack": ["HTML", "Tailwind"],
+    "details": "Developed a high-performance, SEO-optimized property marketing landing page for Agung Sedayu Group's Green Royal Puri project. Features responsive design, image galleries, and property information systems.",
+    "stack": ["HTML", "Tailwind CSS", "Responsive Design", "SEO"],
     "projectUrl": "https://greenroyalpuri.id",
     "image": "gr.png"
   }
