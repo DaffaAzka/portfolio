@@ -6,7 +6,7 @@
  */
 
 const WINDOW_MS = 60 * 1000; // 60 detik
-const MAX_REQUESTS = 10; // max 10 request per window
+const MAX_REQUESTS = 1000;
 
 interface RateLimitEntry {
     timestamps: number[];

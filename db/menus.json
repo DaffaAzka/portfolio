@@ -15,13 +15,8 @@
     "link": "/projects"
   },
   {
-    "id": 4,
-    "title": "Certificates",
-    "link": ""
-  },
-  {
     "id": 5,
     "title": "Contacts",
-    "link": ""
+    "link": "/contact"
   }
 ]
