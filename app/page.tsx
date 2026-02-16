@@ -6,9 +6,12 @@ import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Skills from "@/components/skills";
 
+// Regenerate halaman setiap 1 jam untuk mengurangi edge request
+export const revalidate = 3600; // ISR: 1 jam
+
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <Hero />
       <Timeline />
       <Projects />
