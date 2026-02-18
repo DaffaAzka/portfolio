@@ -1,76 +1,59 @@
+"use client";
+
 import { Instagram, Linkedin, MailIcon, MapPinIcon, MessageCircle, MessageCircleDashedIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
+import { SectionWrapper } from "@/components/ui/section-wrapper";
+import { motion } from "framer-motion";
 
 const Contact = () => (
-  <div className="flex items-center justify-center pt-12 pb-16 md:pt-16">
+  <SectionWrapper className="flex items-center justify-center pt-12 pb-16 md:pt-16">
     <div className="mx-auto w-full max-w-(--breakpoint-xl) px-6 xl:px-0">
-      <b className="font-semibold text-muted-foreground text-sm uppercase">
-        Get In Touch
-      </b>
-      <h2 className="mt-3 font-semibold text-3xl tracking-tighter md:text-4xl">
-        Let&apos;s work together
-      </h2>
-      <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-        Available for freelance projects and collaborations.
-      </p>
+      <div className="text-center sm:text-left">
+        <b className="font-semibold text-primary text-sm uppercase tracking-wide">
+          Get In Touch
+        </b>
+        <h2 className="mt-3 font-bold text-3xl tracking-tight md:text-4xl">
+          Let&apos;s work together
+        </h2>
+        <p className="mt-4 text-base text-muted-foreground sm:text-lg max-w-2xl">
+          Available for freelance projects and collaborations.
+        </p>
+      </div>
+
       <div className="mt-14 grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <div className="rounded-xl border border-dashed bg-muted/40 p-6 pb-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground/5 text-foreground dark:bg-foreground/8">
-            <MailIcon />
-          </div>
-          <h3 className="mt-8 font-bold text-xl">Email</h3>
-          <p className="mt-2.5 mb-4 text-muted-foreground">
-            Reach out directly.
-          </p>
-          <Link
-            className="font-medium"
-            href="mailto:destdevs@gmail.com"
+        {[
+          { icon: MailIcon, title: "Email", desc: "Reach out directly.", link: "mailto:destdevs@gmail.com", label: "destdevs@gmail.com" },
+          { icon: Linkedin, title: "Linkedin", desc: "Reach out directly.", link: "https://www.linkedin.com/in/daffa-azka/", label: "Start connecting via Linkedin" },
+          { icon: Instagram, title: "Instagram", desc: "Reach out directly.", link: "https://www.instagram.com/dest.code/", label: "Follow me on Instagram" },
+          { icon: MessageCircleDashedIcon, title: "Discord", desc: "Reach out directly.", link: "#", label: "destcode" }
+        ].map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            whileHover={{ y: -5 }}
+            className="rounded-xl border border-dashed border-border bg-muted/30 p-6 pb-8 hover:bg-muted/50 transition-colors backdrop-blur-sm"
           >
-            destdevs@gmail.com
-          </Link>
-        </div>
-        <div className="rounded-xl border border-dashed bg-muted/40 p-6 pb-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground/5 text-foreground dark:bg-foreground/8">
-            <Linkedin />
-          </div>
-          <h3 className="mt-8 font-bold text-xl">Linkedin</h3>
-          <p className="mt-2.5 mb-4 text-muted-foreground">
-            Reach out directly.
-          </p>
-          <Link className="font-medium" href="https://www.linkedin.com/in/daffa-azka/">
-            Start connecting via Linkedin
-          </Link>
-        </div>
-        <div className="rounded-xl border border-dashed bg-muted/40 p-6 pb-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground/5 text-foreground dark:bg-foreground/8">
-            <Instagram />
-          </div>
-          <h3 className="mt-8 font-bold text-xl">Instagram</h3>
-          <p className="mt-2.5 mb-4 text-muted-foreground">
-            Reach out directly.
-          </p>
-          <Link
-            className="font-medium"
-            href="https://www.instagram.com/dest.code/"
-          >
-            Follow me on Instagram
-          </Link>
-        </div>
-        <div className="rounded-xl border border-dashed bg-muted/40 p-6 pb-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-foreground/5 text-foreground dark:bg-foreground/8">
-            <MessageCircleDashedIcon />
-          </div>
-          <h3 className="mt-8 font-bold text-xl">Discord</h3>
-          <p className="mt-2.5 mb-4 text-muted-foreground">
-            Reach out directly.
-          </p>
-          <Link className="font-medium" href="#">
-            destcode
-          </Link>
-        </div>
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <item.icon className="h-6 w-6" />
+            </div>
+            <h3 className="mt-8 font-bold text-xl">{item.title}</h3>
+            <p className="mt-2.5 mb-4 text-muted-foreground">
+              {item.desc}
+            </p>
+            <Link
+              className="font-medium hover:underline decoration-primary underline-offset-4"
+              href={item.link}
+            >
+              {item.label}
+            </Link>
+          </motion.div>
+        ))}
       </div>
     </div>
-  </div>
+  </SectionWrapper>
 );
 
 export default Contact;

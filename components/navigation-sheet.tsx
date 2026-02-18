@@ -9,7 +9,7 @@ import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Menu } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
-import { Menu as MenuType } from "@/lib/data";
+import { Menu as MenuType } from "@/lib/types";
 
 export function NavigationSheet({ menus }: { menus: MenuType[] }) {
   return (

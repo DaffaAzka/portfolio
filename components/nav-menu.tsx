@@ -7,7 +7,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Menu } from "@/lib/data";
+import { Menu } from "@/lib/types";
 import Link from "next/link";
 import { ComponentProps } from "react";
 
