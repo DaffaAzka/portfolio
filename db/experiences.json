@@ -1,8 +1,15 @@
 [
   {
+    "title": "Mobile Developer - Freelance",
+    "company": "PT. Tri Nindya Utama",
+    "period": "Febuary 2026 - Present",
+    "description": "Development and maintenance of Point Of Sale (POS) application which one is Kasair.",
+    "technologies": ["Kotlin", "Laravel", "Vue"]
+  },
+  {
     "title": "Full Stack Developer - Apprenticeship",
     "company": "PT. Tri Nindya Utama",
-    "period": "June 2025 - Present",
+    "period": "June 2025 - March 2026",
     "description": "Development and maintenance of Internal Audit Management System applications for clients such as MRT, Jamkrindo, and Waskita Karya.",
     "technologies": ["React", "Express", "Laravel", "Flutter"]
   },
@@ -14,7 +21,7 @@
     "technologies": ["C#", "Java", "Kotlin", "System Design", "Problem Solving"]
   },
   {
-    "title": "Freelance Full Stack Developer",
+    "title": "Full Stack Developer - Freelance",
     "company": "Independent",
     "period": "February - May 2025",
     "description": "Developed a comprehensive CMS for a smart TV manufacturer. Created modern showcase websites for Green Royal Puri and Korean Town projects under Agung Sedayu Group using latest web technologies.",
