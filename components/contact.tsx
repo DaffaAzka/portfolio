@@ -24,7 +24,7 @@ const Contact = () => (
         {[
           { icon: MailIcon, title: "Email", desc: "Reach out directly.", link: "mailto:destdevs@gmail.com", label: "destdevs@gmail.com" },
           { icon: Linkedin, title: "Linkedin", desc: "Reach out directly.", link: "https://www.linkedin.com/in/daffa-azka/", label: "Start connecting via Linkedin" },
-          { icon: Instagram, title: "Instagram", desc: "Reach out directly.", link: "https://www.instagram.com/dest.code/", label: "Follow me on Instagram" },
+          { icon: Instagram, title: "Instagram", desc: "Reach out directly.", link: "https://www.instagram.com/azkacode/", label: "Follow me on Instagram" },
           { icon: MessageCircleDashedIcon, title: "Discord", desc: "Reach out directly.", link: "#", label: "destcode" }
         ].map((item, index) => (
           <motion.div
